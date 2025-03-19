@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Max and Min</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h2>Find Max and Min in an Array</h2>
+    <p id="output"></p>
+
+    <script>
+        
+            let numbers = [12, 45, 7, 89, 23, 56, 3, 91, 34];
+            let max = numbers[0];
+            let min = numbers[0];
+
+            for (let i = 1; i < numbers.length; i++) {
+                if (numbers[i] > max) {
+                    max = numbers[i];
+                }
+                if (numbers[i] < min) {
+                    min = numbers[i];
+                }
+            }
+            console.log("Max Numbers:", max);
+            console.log("Min Numbers:", min);
+        
+    </script>
+</body>
+</html>
