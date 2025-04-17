@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Practice Task</title>
+</head>
+<body>
+
+    <h3 id="task1"></h3>
+    <h3 id="task2"></h3>
+
+    <h3 id="fruitsTitle"></h3>
+    <ul id="fruitsList"></ul>
+
+    <script>
+       
+        document.getElementById("task1").textContent = "Class practice Task!";
+        document.getElementById("task2").textContent = "Class Task Practice Lab 7";
+
+        let fruitsTitle = document.getElementById("fruitsTitle");
+        fruitsTitle.textContent = "Fruits";
+        fruitsTitle.style.fontWeight = "bold"; 
+
+       
+        let fruits = ["Mango", "Orange", "Litchi"];
+        let fruitList = document.getElementById("fruitsList");
+
+     
+        for (let i = 0; i < fruits.length; i++) {
+            let li = document.createElement("li"); 
+            li.textContent = fruits[i]; 
+            fruitList.appendChild(li); 
+        }
+    </script>
+
+</body>
+</html>

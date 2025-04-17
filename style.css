@@ -1,0 +1,12 @@
+.hover-box {
+    background-color: lightgray;
+    width: 200px;
+    border: 1px solid black;
+    transition: 0.3s ease;
+  }
+
+  .hover-box:hover {
+    background-color: skyblue;
+    color: white;
+    transform: scale(1.05);
+  }
