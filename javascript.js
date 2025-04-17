@@ -1,0 +1,1 @@
+document.getElementById("styledPara").classList.add("newStyle");
